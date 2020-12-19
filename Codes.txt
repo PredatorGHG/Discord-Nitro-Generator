@@ -1,1 +1,11 @@
+importieren  zufällig , String
 
+Menge  =  int ( Eingabe ( 'Anzahl der zu generierenden Nitro-Codes:' ))
+Wert  =  1
+während  Wert  <=  Betrag :
+    code  =  "https://discord.gift/"  + ( '' ). beizutreten ( Random . Auswahl ( String . ascii_letters  +  String . digits , k = 16 ))
+    f  =  offen ( 'Codes.txt' , "a +" )
+    f . schreibe ( f ' { code } \ n ' )
+    f . close ()
+    print ( f '[GENERATED] { code } ' )
+    Wert  + =  1
